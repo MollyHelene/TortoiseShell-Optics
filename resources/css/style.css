@@ -73,8 +73,6 @@ ul li {
   align-items: center;
   margin-top: 10rem;
   margin-right: 2rem;
-  background-color: white;
-  width: 35rem;
 }
 
 .main-banner {
@@ -85,6 +83,7 @@ ul li {
   font-size: 2rem;
   line-height: 1.2;
   padding: 1.5rem 5rem;
+  background-color: white;
 }
 
 h1 {
@@ -217,6 +216,7 @@ body {
     padding-top: 0;
     width: 100%;
     height: 17rem;
+    background-position: 20%;
   }
   body {
     width: 100%
