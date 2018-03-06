@@ -50,18 +50,22 @@ nav .logo-white {
   border-style: none;
 }
 
+nav ul {
+margin-right: 1rem;
+}
+
 ul {
   display: block;
 }
 
 ul li {
   display: inline;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
-header .flex {
-  justify-content: flex-end;
-}
+.short-menu {
+    display: none;
+  }
 
 .flex {
   display: flex;
@@ -70,18 +74,21 @@ header .flex {
   margin-top: 10rem;
   margin-right: 2rem;
   background-color: white;
-  width:35rem;
+  width: 35rem;
 }
 
 .main-banner {
-  display: flex;
+  display: inline-block;
   font-weight: bold;
-  text-align;
+  font-size: 2rem;
   color: black;
   font-size: 2rem;
   line-height: 1.2;
   padding: 1.5rem 5rem;
-  margin-left: -2rem;
+}
+
+h1 {
+
 }
 
 /*SUPPORTING SECTION*/
@@ -118,7 +125,7 @@ header .flex {
 .supporting-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 0;
 
@@ -157,6 +164,8 @@ header .flex {
 /*FOOTER SECTION*/
 
 footer {
+  display: flex;
+  align-items: center;
   background-color: azure;
 }
 
@@ -173,4 +182,101 @@ footer {
   height: 1.5rem;
   padding-right: 1rem;
   padding-left: 4rem;
+}
+
+/*--MEDIA QUERIES--*/
+
+/*--Tablet 1024--*/
+
+@media only screen and (max-width: 1024px) {
+header{
+  height: 22rem;
+  padding-top: 0;
+}
+body {
+  width: 100%
+}
+.flex {
+  margin-top: 5rem;
+  margin-right: 2rem;
+}
+.main-banner {
+  padding: .75rem 4rem;
+  font-size: 1.33rem;
+}
+.short-menu {
+    display: none;
+  }
+}
+
+/*--mobile 640--*/
+
+@media only screen and (max-width: 640px) {
+  header{
+    height: 22rem;
+    padding-top: 0;
+    width: 100%;
+    height: 17rem;
+  }
+  body {
+    width: 100%
+  }
+  .flex {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    background-position: 20%;
+  }
+  .main-banner {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+.menu ul {
+  display: none;
+}
+.short-menu {
+  display: block;
+}
+.supporting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2.23rem;
+  margin-bottom: 2.23rem;
+}
+.service {
+  height: auto;
+  margin: .778rem;
+  font-size: .77rem;
+}
+.supporting-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+.info {
+  width: 100%;
+}
+.info-title {
+  width: 100%;
+  text-align: center;
+}
+.description {
+  font-size: .77rem;
+  text-align: justify;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+}
+.description-appt {
+  font-size: .77rem;
+  text-align: justify;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 }
